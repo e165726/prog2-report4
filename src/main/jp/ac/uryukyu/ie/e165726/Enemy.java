@@ -1,6 +1,5 @@
 package jp.ac.uryukyu.ie.e165726;
 
-
 public class Enemy {
     String name;
     int hitPoint;
