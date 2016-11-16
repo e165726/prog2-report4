@@ -38,8 +38,13 @@ public class Enemy {
      * @param hero 攻撃対象
      */
     public void attack(Hero hero){
-        int damage = (int)(Math.random() * attack);
-        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.getName(), damage);
+        int damage;
+        if(dead == false) {
+            damage = (int) (Math.random() * attack);
+            System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.getName(), damage);
+        }else{
+            damage = 0;
+        }
         hero.wounded(damage);
     }
 
