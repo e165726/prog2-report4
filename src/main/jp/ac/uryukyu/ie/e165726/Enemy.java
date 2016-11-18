@@ -10,7 +10,7 @@ public class Enemy extends LivingThing{
         hitPoint -= damage;
         if (hitPoint < 0) {
             dead = true;
-            System.out.printf("モンスター%sは倒れた。\n", name);
+            System.out.printf("モンスタースライムは倒れた。\n", name);
         }
     }
 
