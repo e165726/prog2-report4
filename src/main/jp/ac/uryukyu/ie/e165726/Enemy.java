@@ -11,7 +11,7 @@ public class Enemy extends LivingThing{
         setHitPoint(getHitPoint() - damage);
         if (getHitPoint() < 0) {
             setDead(true);
-            System.out.printf("モンスタースライムは倒れた。\n", getName());
+            System.out.printf("モンスター%sは倒れた。\n", getName());
         }
     }
 
